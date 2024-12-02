@@ -102,7 +102,11 @@ int main()
     long similarity = calcSimil();
     std::cout << "distanza: " << distanza << std::endl;
     std::cout << "similarity: " << similarity << std::endl;
-    // CORRETTO!!
+    
+    delete l1;
+    delete l2;
+    l1 = nullptr;
+    l2 = nullptr;
 
     return 0;
 }
